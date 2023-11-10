@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D 프린터 인터페이스</title>
+<style>
+
+  #unityContainer {
+    width: 960px; 
+    height: 600px; 
+    border: 1px solid black;
+  }
+</style>
+</head>
+<body>
+  <!-- 첫 번째 페이지로 돌아가기-->
+<button onclick="location.href='index.html'">첫 페이지로 돌아가기</button>
+<h1>3D 프린터 실시간 관리</h1>
+
+<!-- 아이콘을 사용한 프린터 조작 버튼들 -->
+<div id="printerControls">
+    <h2>프린터 조작</h2>
+    <!-- 아이콘은 Font Awesome과 같은 라이브러리를 사용하거나 직접 이미지를 사용할 수 있습니다 -->
+    <button id="startPrint"><img src="https://drive.google.com/uc?export=view&id=1lRqbhD54hvJgXs26Ud9qySl-aA8T7d4R" border="0" width="50" height="50" alt="Start Printing" /></button>
+    <button id="pausePrint"><img src="https://drive.google.com/uc?export=view&id=12JFOcMG9nPHZ7Es2dJPKZBOw3VaODQG0" border="0" width="50" height="50" alt="Pause Printing" /></button>
+    <button id="stopPrint"><img src="https://drive.google.com/uc?export=view&id=1ffYClnonllEdAbbRmeJME8gfvLnkX1Tn" border="0" width="50" height="50" alt="Stop Printing" /></button>
+</div>
+
+<!-- 유니티 앱을 띄울 컨테이너 -->
+<div id="unityContainer">
+  <!-- 유니티 WebGL 빌드를 포함할 iframe -->
+  <iframe id="unityIframe" src="your_unity_build.html" frameborder="0"></iframe>
+</div>
+
+<!-- 여기에 실시간으로 상태를 업데이트하는 JavaScript 코드를 추가할 예정 -->
+<script>
+
+</script>
+
+</body>
+</html>
